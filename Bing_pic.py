@@ -1,4 +1,4 @@
-#用于爬取Bing首页背景，获得5K分辨率图片。
+#用于爬取Bing首页背景，获得UHD+分辨率的图片。
 import requests
 import re
 header = {"user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"}
