@@ -1,5 +1,10 @@
 # coding:utf-8
---- 等待添加Gerber文件清理项 ---
+---
+等待添加Gerber文件清理项
+仅支持单层工程目录清理，误删文件概不负责
+使用前三思，使用后检查工程
+---
+
 import sys
 import os
 import shutil
