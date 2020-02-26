@@ -66,7 +66,7 @@ def getSatoriHitokoto():
         else:
             print (txt)
 
-        obJsonText = "{\"from\":\"satori.moe\",\"text\":\"" + txt + "\"anthor\":\"" + author + "\"}"
+        obJsonText = "{\"from\":\"satori.moe\",\"text\":\"" + txt + "\",\"anthor\":\"" + author + "\"}"
         saveToFile (obJsonText)
 
     except ReadTimeout:
