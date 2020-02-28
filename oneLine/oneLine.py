@@ -26,6 +26,8 @@ def getOneLineHitokoto():
         if objson != '':
             txt = objson["hitokoto"].replace('\n','')
             author = objson["from"].replace('\n','')
+            txt = txt.replace('\r','')
+            author = author.replace('\r','')
             if len(author) > 0 :
                 print (txt + " --" + author,flush=True)
             else:
@@ -47,6 +49,8 @@ def getHitoApiHitokoto():
         if objson != '':
             txt = objson["text"].replace('\n','')
             author = objson["author"].replace('\n','')
+            txt = txt.replace('\r','')
+            author = author.replace('\r','')
             if len(author) > 0 :
                 print (txt + " --" + author,flush=True)
             else:
@@ -68,6 +72,8 @@ def getSatoriHitokoto():
         if objson != '':
             txt = objson["hitokoto"].replace('\n','')
             author = objson["source"].replace('\n','')
+            txt = txt.replace('\r','')
+            author = author.replace('\r','')
             if len(author) > 0 :
                 print (txt + " --" + author,flush=True)
             else:
