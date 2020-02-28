@@ -6,8 +6,8 @@ import random
 import paho.mqtt.client
 from apscheduler.schedulers.background import BackgroundScheduler
 
-aliHOST = "127.0.0.1"   #服务器地址
-aliPORT = 1883          #服务器端口
+aliHOST = "127.0.0.1"
+aliPORT = 1883
 clitntID  = "pyOneLineServer"
 
 oneLineFileDir = "" #文件路径全局变量
@@ -22,7 +22,6 @@ def on_message(client, userdata, msg):
     print("收到订阅 hjOneLineGet 主题: " + str(msg.payload),flush = True)
     text = radomLine()
     client.publish(topic='hjOneLinePut',payload=text)
-    print("发布返回消息 - hjOneLinePut\n"+ text,flush = True)
 
 def mqtt_start():
     client = paho.mqtt.client.Client(transport='tcp')
