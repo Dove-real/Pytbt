@@ -97,9 +97,9 @@ if __name__ == "__main__":
         getSatoriHitokoto()
         getHitoApiHitokoto()
 
-        delayTime = 60
-        for i in range(0, delayTime*2):
-            progressBar.setBar(i, delayTime*2)
-            time.sleep(0.5)
+        delayTime = 40
+        for i in range(0, delayTime*4):
+            progressBar.setBar(i, delayTime*4)
+            time.sleep(0.25)
         progressBar.clearBar()
         print('', flush=True)
