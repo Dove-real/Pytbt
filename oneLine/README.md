@@ -16,3 +16,8 @@
 使用 oneLine.py 前一天获取到的文件
 
 然后通过MQTT服务传递给物联网?设备
+
+比如使用oneLineGet.py ↓
+
+### oneLineGet.py
+一个使用MQTT读取oneLine的简陋脚本
