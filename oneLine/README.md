@@ -2,7 +2,11 @@
 
 ## 文件作用
 ### oneLine.py
-从三个 一言 站点获取一言信息，并保存到本地
+每60s从三个一言站点获得文本信息，并保存到本地
+1. https://v1.hitokoto.cn/
+2. https://hitoapi.cc/sp/
+3. https://api.satori.moe/hitokoto.php
+非常感谢以上三个站点
 
 ### progressBar.py
 一个愚蠢的进度条显示模块
