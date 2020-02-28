@@ -6,6 +6,7 @@
 1. https://v1.hitokoto.cn/
 2. https://hitoapi.cc/sp/
 3. https://api.satori.moe/hitokoto.php
+
 非常感谢以上三个站点
 
 ### progressBar.py
