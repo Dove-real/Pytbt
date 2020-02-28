@@ -65,7 +65,7 @@ def check_db():
     global oneLineFileDir
     try:
         with open(dir,"r",encoding = "utf-8") as f:
-            print ("发现新文件, 更新使用",flush = True)
+            print ("发现新文件",flush = True)
             oneLineFileDir = dir
             print ("当前文件 :" + oneLineFileDir,flush = True)
     except:
