@@ -19,7 +19,7 @@ def on_connect(client, userdata, flags, rc):
     print("订阅 hjOneLineGet: " + str(rc),flush = True)
 
 def on_message(client, userdata, msg):
-    print("收到订阅 hjOneLineGet 主题: " + str(msg.payload),flush = True)
+    print("收到订阅 hjOneLineGet 内容: " + str(msg.payload),flush = True)
     text = radomLine()
     client.publish(topic='hjOneLinePut',payload=text)
 
@@ -51,7 +51,8 @@ def openFile():
 def radomLine():    #随机取一行
     l = random.randint(1,(oneLineFileLen-2))
     dir = oneLineFileDir
-    print ("Textdur :" + oneLineFileDir,flush = True)
+    timeStr = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    print ("Textdur :" + oneLineFileDir + " ," + timeStr, flush = True)
     with open(dir,"r",encoding = "utf-8") as oneLineFile:
         line = oneLineFile.readlines()[l]
         return line
