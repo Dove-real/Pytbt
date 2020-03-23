@@ -45,5 +45,5 @@ data = {
     'desp': name+str(img_file.size)
 }
 requests.post(
-    'https://sc.ftqq.com/SCU27489T31134321f69b92ae24bbc79292576a945b152d2f41663.send', data=data
+    'https://sc.ftqq.com/{Key}.send', data=data
 )
