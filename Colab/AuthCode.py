@@ -1,8 +1,4 @@
-from captcha.image import ImageCaptcha
-from PIL import Image
-
-text = '12husdah34'
-image = ImageCaptcha()
-captcha = image.generate(text)
-captcha_image = Image.open(captcha)
-captcha_image.show()
+from __future__ import print_function
+import pandas as pd
+pd.__version__
+ 
